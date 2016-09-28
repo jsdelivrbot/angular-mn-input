@@ -37,5 +37,5 @@ And then, in your html, you can use the tag:
 ```
 
 
-For more details check docs [mn-input docs](https://github.com/darlanmendonca/mn-input).
+For more details check docs [mn-input docs](https://github.com/minimalist-components/mn-input).
 
