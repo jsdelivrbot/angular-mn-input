@@ -1,0 +1,20 @@
+{
+  "name": "angular-mn-input",
+  "version": "0.0.1",
+  "description": "An angular directive to mn-input",
+  "main": [
+    "dist/mn-input.css",
+    "dist/mn-input.js"
+  ],
+  "authors": [
+    "Darlan Mendonça <darlanmendonca@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "mn-input": "0.0.1"
+  },
+  "devDependencies": {
+    "angular": "^1.5.8"
+  }
+}
