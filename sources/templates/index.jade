@@ -11,7 +11,7 @@ html(ng-app='app')
 
 body
   div(ng-controller='IndexController as controller')
-    h2 mn-input {{ controller.credentials }}
+    h2 mn-input
     mn-input(placeholder='Username', ng-model='controller.credentials.username')
     mn-input(placeholder='Password', type='password', ng-model='controller.credentials.password')
     mn-input(placeholder='Input Password', type='password', disabled, ng-model='controller.credentials.password')
