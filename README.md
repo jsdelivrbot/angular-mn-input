@@ -2,7 +2,9 @@
 
 An angular directive to [mn-input](https://github.com/darlanmendonca/mn-input)
 
-<!-- See the [demo](http://codepen.io/darlanmendonca/full/NRNvRZ/) -->
+See the [demo](http://codepen.io/darlanmendonca/full/akgXQq)
+
+[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-input/master/sources/example/mn-input.gif)](http://codepen.io/darlanmendonca/full/akgXQq)
 
 ### Install
 
