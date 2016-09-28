@@ -12,7 +12,7 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "mn-input": "0.0.1"
+    "mn-input": "0.0.2"
   },
   "devDependencies": {
     "angular": "^1.5.8"

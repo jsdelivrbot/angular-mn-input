@@ -10,26 +10,26 @@ html(ng-app='app')
     }
 
 body
-  div
-    h2 mn-input
-    mn-input(placeholder='Username')
-    mn-input(placeholder='Password', type='password')
-    mn-input(placeholder='Input', type='password', disabled)
-    mn-input(placeholder='Email', type='email')
+  div(ng-controller='IndexController as controller')
+    h2 mn-input {{ controller.credentials }}
+    mn-input(placeholder='Username', ng-model='controller.credentials.username')
+    mn-input(placeholder='Password', type='password', ng-model='controller.credentials.password')
+    mn-input(placeholder='Input Password', type='password', disabled, ng-model='controller.credentials.password')
+    mn-input(placeholder='Email', type='email', ng-model='email')
 
-  div
+  //- div
     h2 mn-input[disabled]
     mn-input(placeholder='Input', disabled)
 
-  div
+  //- div
     h2 mn-input[type='text']
     mn-input(placeholder='Username')
 
-  div
+  //- div
     h2 mn-input[type='password']
     mn-input(placeholder='Password', type='password')
 
-  div
+  //- div
     h2 mn-input[type='email']
     mn-input(placeholder='Email', type='email')
 
@@ -39,4 +39,15 @@ body
     angular.module('app', [
       'mn-input',
     ]);
+
+    angular
+      .module('app')
+      .controller('IndexController', IndexController);
+
+    function IndexController() {
+      this.credentials = {
+        username: undefined,
+        password: undefined,
+      };
+    }
 
