@@ -23,17 +23,19 @@ Or just download the main files ```dist/mn-input.css, dist/mn-input.js``` in you
 
 ### Usage
 
+```js
+// add dependency in you module
+angular.module('app', [
+  'mn-input'
+]);
+```
+
 And then, in your html, you can use the tag:
 
 ```html
 <mn-input placeholder="Username" ng-model='username'></mn-input>
 ```
 
-```js
-angular.module('app', [
-  'mn-input'
-]);
-```
 
 For more details check docs [mn-input docs](https://github.com/darlanmendonca/mn-input).
 
