@@ -1,6 +1,6 @@
 # angular-mn-input
 
-An angular directive to [mn-input](https://github.com/darlanmendonca/mn-input)
+An angular directive to [mn-input](https://github.com/minimalist-components/mn-input)
 
 See the [demo](http://codepen.io/darlanmendonca/full/akgXQq)
 
