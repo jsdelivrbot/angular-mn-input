@@ -1,9 +1,10 @@
 {
   "name": "angular-mn-input",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "An angular directive to mn-input",
   "main": [
-    "dist/mn-input.js"
+    "dist/mn-input.js",
+    "dist/mn-input.css"
   ],
   "authors": [
     "Darlan Mendonça <darlanmendonca@gmail.com>"
