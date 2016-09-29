@@ -12,6 +12,8 @@
   "homepage": "",
   "dependencies": {
     "angular": "^1.5.8",
-    "mn-input": "0.0.3"
+    "angular-messages": "^1.5.8",
+    "mn-input": "0.0.8",
+    "mn-palette-color": "0.0.1"
   }
 }

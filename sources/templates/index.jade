@@ -2,6 +2,7 @@ html(ng-app='app')
   meta(name='viewport' content='width=device-width, user-scalable=no')
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
+  link(rel='stylesheet' href='styles/vendor.css')
   link(rel='stylesheet' href='mn-input.css')
   style.
     body {
@@ -10,12 +11,20 @@ html(ng-app='app')
     }
 
 body
-  div(ng-controller='IndexController as controller')
+  form(ng-controller='IndexController as controller', name='form', novalidate)
     h2 mn-input
-    mn-input(placeholder='Username', ng-model='controller.credentials.username')
-    mn-input(placeholder='Password', type='password', ng-model='controller.credentials.password')
-    mn-input(placeholder='Input Password', type='password', disabled, ng-model='controller.credentials.password')
-    mn-input(placeholder='Email', type='email', ng-model='email')
+    div
+      mn-input(placeholder='Username', ng-model='controller.credentials.username', required, name='username', type='email')
+        //- small.message(ng-messages='(form.$submitted || form.username.$touched) && form.username.$error')
+          span(ng-message='required') Campo obrigatório
+          span(ng-message='email') Email inválido
+
+      mn-input(placeholder='Password', type='password', ng-model='controller.credentials.password', required, name='password')
+      mn-input(placeholder='Input Password', type='password', disabled, ng-model='controller.credentials.password')
+    div
+      mn-input(placeholder='Email', type='email', ng-model='email')
+    
+    button(type='submit') Submit
 
   //- div
     h2 mn-input[disabled]

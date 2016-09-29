@@ -1,3 +1,5 @@
 'use strict';
 
-angular.module('mn-input', []);
+angular.module('mn-input', [
+  'ngMessages',
+]);

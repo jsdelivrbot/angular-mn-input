@@ -2,6 +2,7 @@
 
 let gulp = require('gulp');
 let bower = require('bower-files')();
+let concat = require('gulp-concat');
 let minifyCss = require('gulp-minify-css');
 
 gulp.task('vendorCSS', vendorCSSTask);
@@ -9,6 +10,7 @@ gulp.task('vendorCSS', vendorCSSTask);
 function vendorCSSTask() {
   return gulp
     .src(bower.ext('css').files)
+    .pipe(concat('vendor.css'))
     .pipe(minifyCss({keepSpecialComments: 0}))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./public/styles'));
 }
