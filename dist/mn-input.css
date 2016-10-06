@@ -1,3 +1,3 @@
-form.ng-submitted mn-input input:invalid{box-shadow:0 1px 0 #EC407A}form.ng-submitted mn-input input:invalid:focus{box-shadow:0 2px 0 #EC407A}form.ng-submitted mn-input input:invalid+label{color:#E91E63}mn-input input.ng-touched:invalid{box-shadow:0 1px 0 #EC407A}mn-input input.ng-touched:invalid:focus{box-shadow:0 2px 0 #EC407A}mn-input input.ng-touched:invalid+label{color:#E91E63}
+form.ng-submitted mn-input input:invalid{box-shadow:0 1px 0 #EC407A}form.ng-submitted mn-input input:invalid:focus{box-shadow:0 2px 0 #EC407A}form.ng-submitted mn-input input:invalid+label{color:#E91E63}
 
 /*# sourceMappingURL=mn-input.css.map */

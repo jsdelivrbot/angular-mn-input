@@ -19,7 +19,7 @@ function mnInputDirective($compile) {
     let formName = element[0].closest('form').name;
 
     if (attributes.name && formName) {
-      let messagesRule = '(formName.$submitted || formName.inputName.$touched) && formName.inputName.$error'
+      let messagesRule = 'formName.$submitted && formName.inputName.$error'
         .replace(/formName/g, formName)
         .replace(/inputName/g, attributes.name);
 

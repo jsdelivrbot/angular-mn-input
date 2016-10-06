@@ -13,14 +13,3 @@ form.ng-submitted mn-input {
     color: $label-color;
   }
 }
-
-mn-input input.ng-touched {
-  &:invalid {
-    box-shadow: 0 $tickness 0 $border-color;
-    &:focus {box-shadow: 0 $focus-tickness 0 $border-color}
-  }
-
-  &:invalid + label {
-    color: $label-color;
-  }
-}
