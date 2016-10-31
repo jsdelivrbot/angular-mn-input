@@ -1,3 +1,5 @@
+[![Bower version](https://badge.fury.io/bo/angular-mn-input.svg)](https://badge.fury.io/bo/angular-mn-input)
+
 # angular-mn-input
 
 An angular directive to [mn-input](https://github.com/minimalist-components/mn-input)
