@@ -1,28 +1,24 @@
-'use strict';
-
-let gulp = require('gulp');
-let gutil = require('gulp-util');
-let babel = require('gulp-babel');
-let sourcemaps = require('gulp-sourcemaps');
-let config = require('./gulp.config.js');
-let plumber = require('gulp-plumber');
-let concat = require('gulp-concat');
-let uglify = require('gulp-uglify');
-let ngAnnotate = require('gulp-ng-annotate');
+import gulp from 'gulp';
+import gutil from 'gulp-util';
+import babel from 'gulp-babel';
+import sourcemaps from 'gulp-sourcemaps';
+import plumber from 'gulp-plumber';
+import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
+import {scripts} from './config.js';
 
 gulp.task('scripts', scriptsTask);
 
 function scriptsTask() {
   return gulp
-    .src(config.scripts.src)
+    .src(scripts.src)
     .pipe(plumber({errorHandler}))
     .pipe(sourcemaps.init())
-    .pipe(ngAnnotate())
     .pipe(babel())
-    .pipe(concat(config.scripts.output))
+    .pipe(concat(scripts.output))
     .pipe(uglify({mangle: false}))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(config.scripts.dest));
+    .pipe(gulp.dest(scripts.dest));
 }
 
 function errorHandler(err) {

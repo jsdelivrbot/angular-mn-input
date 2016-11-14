@@ -1,25 +1,20 @@
-'use strict';
-
 let optional = 1;
 let required = 2;
 
 module.exports = {
+  parserOptions: {
+    sourceType: 'module',
+  },
   env: {
+    browser: true,
     node: true,
     es6: true,
-    mocha: true,
-    protractor: true,
-    browser: true,
   },
   globals: {
-    expect: true,
-    angular: true,
+    customElements: true,
   },
   rules: {
     semi: [required, 'always'],
-    'comma-dangle': [required, 'always-multiline'],
-    'comma-style': [required, 'last'],
-    indent: [required, 2],
     curly: [required, 'all'],
     'brace-style': [required, '1tbs'],
     quotes: [required, 'single'],
@@ -36,7 +31,7 @@ module.exports = {
     eqeqeq: [required, 'smart'],
     'max-depth': [optional, 3],
     'max-len': [optional, 120],
-    'max-statements': [optional, 15],
+    'max-statements': [optional, 20],
     'new-cap': optional,
     'no-extend-native': required,
     'no-mixed-spaces-and-tabs': required,
@@ -45,7 +40,6 @@ module.exports = {
     'block-spacing': [required, 'never'],
     'newline-per-chained-call': required,
     'keyword-spacing': required,
-    'key-spacing': [required, {afterColon: true}],
     'space-unary-ops': required,
   }
 };
