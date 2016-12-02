@@ -1,5 +1,3 @@
-'use strict';
-
 angular
   .module('mn-input')
   .directive('mnInput', mnInputDirective);
@@ -26,26 +24,31 @@ function mnInputDirective($compile) {
       let validations = [
         {
           name: 'required',
-          text: 'Required field',
+          text: 'is required',
         },
         {
           name: 'email',
-          text: 'Invalid email address',
+          text: 'is invalid',
         },
       ];
 
-      let messages = document.createElement('small');
-      messages.classList.add('message');
-      messages.setAttribute('ng-messages', messagesRule);
+      let label = element[0].querySelector('label');
+      label.setAttribute('ng-messages', messagesRule);
       validations.forEach(setMessage);
-      element[0].appendChild(messages);
-      $compile(messages)(scope);
+      // label.appendChild(messages);
+      $compile(label)(scope);
+      // let messages = document.createElement('small');
+      // messages.classList.add('message');
+      // messages.setAttribute('ng-messages', messagesRule);
+      // validations.forEach(setMessage);
+      // label.appendChild(messages);
+      // $compile(messages)(scope);
 
       function setMessage(validation) {
         let message = document.createElement('span');
         message.setAttribute('ng-message', validation.name);
-        message.textContent = validation.text;
-        messages.appendChild(message);
+        message.textContent = ' ' + validation.text;
+        label.appendChild(message);
       }
     }
   }

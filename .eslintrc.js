@@ -11,6 +11,7 @@ module.exports = {
     es6: true,
   },
   globals: {
+    angular: true,
     customElements: true,
   },
   rules: {
