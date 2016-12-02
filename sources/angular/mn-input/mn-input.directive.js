@@ -35,14 +35,7 @@ function mnInputDirective($compile) {
       let label = element[0].querySelector('label');
       label.setAttribute('ng-messages', messagesRule);
       validations.forEach(setMessage);
-      // label.appendChild(messages);
       $compile(label)(scope);
-      // let messages = document.createElement('small');
-      // messages.classList.add('message');
-      // messages.setAttribute('ng-messages', messagesRule);
-      // validations.forEach(setMessage);
-      // label.appendChild(messages);
-      // $compile(messages)(scope);
 
       function setMessage(validation) {
         let message = document.createElement('span');
