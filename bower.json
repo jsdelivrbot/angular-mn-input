@@ -12,8 +12,8 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "angular": "^1.5.8",
-    "angular-messages": "^1.5.8",
+    "angular": "^1.5.9",
+    "angular-messages": "^1.5.9",
     "mn-input": "0.0.21",
     "mn-palette-color": "0.0.1"
   }
