@@ -1,8 +1,8 @@
 angular
   .module('mn-input')
-  .directive('mnInput', mnInputDirective)
+  .directive('mnInput', MnInputDirective)
 
-function mnInputDirective($compile) {
+function MnInputDirective($compile, MnInput) {
   return {
     restrict: 'E',
     link,
@@ -21,16 +21,17 @@ function mnInputDirective($compile) {
         .replace(/formName/g, formName)
         .replace(/inputName/g, attributes.name)
 
-      let validations = [
-        {
-          name: 'required',
-          text: 'is required',
-        },
-        {
-          name: 'email',
-          text: 'is invalid',
-        },
-      ]
+      let validations = []
+      Object.keys(MnInput.messages).forEach(setValidations)
+
+      function setValidations(name) {
+        const text = MnInput.messages[name]
+        const validation = {
+          name,
+          text,
+        }
+        validations.push(validation)
+      }
 
       let label = element[0].querySelector('label')
       label.setAttribute('ng-messages', messagesRule)
