@@ -20,6 +20,9 @@ body
       mn-input(placeholder='Input Password', type='password', disabled, ng-model='controller.credentials.password')
     div
       mn-input(placeholder='Email', type='email', ng-model='email')
+
+    div
+      mn-input.flex(name='id' placeholder='username' ng-model='controller.credentials.id' required)
     
     button(type='submit') Submit
 
@@ -39,7 +42,7 @@ body
     h2 mn-input[type='email']
     mn-input(placeholder='Email', type='email')
 
-  script(src='scripts/vendor.js')
+  script(src='vendor.js')
   script(src='angular-mn-input.js')
   script.
     angular.module('app', [
