@@ -14,7 +14,7 @@ function mnInputDirective($compile) {
     input.attr('ng-model', attributes.ngModel)
     $compile(input)(scope)
 
-    let formName = element[0].closest('form').name
+    let formName = element[0].closest('form').getAttribute('name')
 
     if (attributes.name && formName) {
       let messagesRule = 'formName.$submitted && formName.inputName.$error'
