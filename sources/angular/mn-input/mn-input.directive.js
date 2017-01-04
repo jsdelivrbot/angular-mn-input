@@ -10,18 +10,18 @@ function mnInputDirective($compile) {
   }
 
   function link(scope, element, attributes) {
-    let input = element.find('input')
+    const input = element.find('input')
     input.attr('ng-model', attributes.ngModel)
     $compile(input)(scope)
 
-    let formName = element[0].closest('form').getAttribute('name')
+    const formName = element[0].closest('form').getAttribute('name')
 
     if (attributes.name && formName) {
-      let messagesRule = 'formName.$submitted && formName.inputName.$error'
+      const messagesRule = 'formName.$submitted && formName.inputName.$error'
         .replace(/formName/g, formName)
         .replace(/inputName/g, attributes.name)
 
-      let validations = [
+      const validations = [
         {
           name: 'required',
           text: 'is required',
@@ -32,13 +32,13 @@ function mnInputDirective($compile) {
         },
       ]
 
-      let label = element[0].querySelector('label')
+      const label = element[0].querySelector('label')
       label.setAttribute('ng-messages', messagesRule)
       validations.forEach(setMessage)
       $compile(label)(scope)
 
       function setMessage(validation) {
-        let message = document.createElement('span')
+        const message = document.createElement('span')
         message.setAttribute('ng-message', validation.name)
         message.textContent = ` ${validation.text}`
         label.appendChild(message)
