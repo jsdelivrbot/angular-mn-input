@@ -7,9 +7,9 @@
 
 An angular directive to [mn-input](https://github.com/minimalist-components/mn-input)
 
-See the [demo](http://codepen.io/darlanmendonca/full/akgXQq)
+See the [demo](https://minimalist-components.github.io/mn-input)
 
-[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-input/master/sources/example/mn-input.gif)](http://codepen.io/darlanmendonca/full/akgXQq)
+[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-input/master/sources/example/mn-input.gif)](https://minimalist-components.github.io/mn-input/)
 
 ### Install
 
@@ -19,12 +19,7 @@ With bower
 bower install --save angular-mn-input
 ```
 
-Or just download the main files ```dist/mn-input.css, dist/mn-input.js``` in your project, and make a reference to their, like:
-
-```html
-<link rel="stylesheet" href="path/to/mn-input.css">
-<script src="path/to/mn-input.js"></script>
-```
+Or just download the main files, located in [dist/](https://github.com/minimalist-components/angular-mn-input/tree/master/dist)
 
 ### Usage
 
