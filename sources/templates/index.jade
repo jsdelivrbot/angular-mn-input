@@ -11,10 +11,10 @@ html(ng-app='app')
     }
 
 body
-  form(ng-controller='IndexController as controller', name='form', novalidate)
+  form(ng-controller='IndexController as controller' name='form' novalidate ng-submit='controller.validate()')
     h2 mn-input
     div
-      mn-input(placeholder='Fullname', ng-model='controller.credentials.username', required, name='name')
+      mn-input(placeholder='Fullname' ng-model='controller.credentials.username' required name='name')
     //- div
       mn-input(placeholder='Username', ng-model='controller.credentials.username', required, name='username')
 
@@ -59,6 +59,17 @@ body
       this.credentials = {
         username: undefined,
         password: undefined,
-      };
+      }
+
+      this.validate = validate
+
+      function validate() {
+        var inputs = document.querySelectorAll('.mn-input')
+        Array
+          .from(inputs)
+          .forEach(function(input) {
+            input.validate()
+          })
+      }
     }
 

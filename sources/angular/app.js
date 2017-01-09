@@ -1,3 +1,1 @@
-angular.module('mn-input', [
-  'ngMessages',
-])
+angular.module('mn-input', [])
