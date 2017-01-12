@@ -11,7 +11,7 @@ See the [demo](https://minimalist-components.github.io/mn-input)
 
 [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-input/master/sources/example/mn-input.gif)](https://minimalist-components.github.io/mn-input/)
 
-### Install
+### install
 
 With bower
 
@@ -21,7 +21,7 @@ bower install --save angular-mn-input
 
 Or just download the main files, located in [dist/](https://github.com/minimalist-components/angular-mn-input/tree/master/dist)
 
-### Usage
+### usage
 
 ```js
 // add dependency in you module
