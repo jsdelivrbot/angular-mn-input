@@ -1,6 +1,6 @@
 {
   "name": "angular-mn-input",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "description": "An angular directive to mn-input",
   "main": [
     "dist/angular-mn-input.js",
@@ -13,6 +13,6 @@
   "homepage": "",
   "dependencies": {
     "angular": "1.6.1",
-    "mn-input": "^0.0.41"
+    "mn-input": "^0.0.42"
   }
 }
