@@ -13,8 +13,8 @@ html(ng-app='app')
 body
   form(ng-controller='IndexController as controller' name='form' novalidate ng-submit='controller.validate()')
     h2 mn-input
-    div
-      mn-input(placeholder='Fullname' ng-model='controller.credentials.username' required name='name')
+    //- div(ng-repeat='item in controller.items')
+    mn-input(placeholder='Fullname' ng-model='controller.credentials.username' required name='name')
     //- div
       mn-input(placeholder='Username', ng-model='controller.credentials.username', required, name='username')
 
@@ -56,6 +56,10 @@ body
       .controller('IndexController', IndexController);
 
     function IndexController() {
+      this.items = [
+        '0',
+        '1',
+      ]
       this.credentials = {
         username: undefined,
         password: undefined,

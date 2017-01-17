@@ -10,6 +10,7 @@ function mnInputDirective($compile, $parse) {
   }
 
   function link(scope, element, attributes) {
+    console.log('run')
     const input = element.find('input')
     element[0].value = $parse(attributes.ngModel)(scope)
     input.attr('ng-model', attributes.ngModel)
