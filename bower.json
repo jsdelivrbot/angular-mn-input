@@ -13,6 +13,6 @@
   "homepage": "",
   "dependencies": {
     "angular": "1.6.1",
-    "mn-input": "^0.0.42"
+    "mn-input": "^0.0.46"
   }
 }
