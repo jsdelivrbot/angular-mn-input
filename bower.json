@@ -2,8 +2,7 @@
   "name": "angular-mn-input",
   "description": "An angular directive to mn-input",
   "main": [
-    "dist/angular-mn-input.js",
-    "dist/angular-mn-input.css"
+    "dist/angular-mn-input.js"
   ],
   "authors": [
     "Darlan Mendonça <darlanmendonca@gmail.com>"
@@ -12,6 +11,6 @@
   "homepage": "",
   "dependencies": {
     "angular": "1.6.1",
-    "mn-input": "^0.0.46"
+    "mn-input": "^0.0.48"
   }
 }
