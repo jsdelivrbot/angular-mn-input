@@ -1,7 +1,6 @@
-[![Bower version](https://badge.fury.io/bo/angular-mn-input.svg)](https://badge.fury.io/bo/angular-mn-input)
+[![npm version](https://badge.fury.io/js/angular-mn-input.svg)](https://badge.fury.io/js/angular-mn-input)
 [![Dependency Status](https://gemnasium.com/badges/github.com/minimalist-components/angular-mn-input.svg)](https://gemnasium.com/github.com/minimalist-components/angular-mn-input)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)   
-
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)  
 
 # angular-mn-input
 
@@ -9,19 +8,17 @@ An angular directive to [mn-input](https://github.com/minimalist-components/mn-i
 
 See the [demo](https://minimalist-components.github.io/mn-input)
 
-[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-input/master/sources/example/mn-input.gif)](https://minimalist-components.github.io/mn-input/)
+[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-input/master/preview.gif)](https://minimalist-components.github.io/angular-mn-input/)
 
-### install
-
-With bower
+### Install
 
 ```sh
-bower install --save angular-mn-input
+npm install --save angular-mn-input
 ```
 
-Or just download the main files, located in [dist/](https://github.com/minimalist-components/angular-mn-input/tree/master/dist)
+And bundle dependencies and main files in [dist/](https://github.com/minimalist-components/mn-select/tree/master/dist) with your preferred tool.
 
-### usage
+### Usage
 
 ```js
 // add dependency in you module
