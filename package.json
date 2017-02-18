@@ -1,6 +1,6 @@
 {
   "name": "angular-mn-input",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "an angular directive to mn-input",
   "main": "dist/angular-mn-input.js",
   "files": [
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "angular": "^1.6.1",
-    "mn-input": "^0.0.5"
+    "mn-input": "~0.0.6"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
