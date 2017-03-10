@@ -16,7 +16,7 @@ See the [demo](https://minimalist-components.github.io/mn-input)
 npm install --save angular-mn-input
 ```
 
-And bundle dependencies and main files in [dist/](https://github.com/minimalist-components/mn-select/tree/master/dist) with your preferred tool.
+And bundle dependencies and main files in [dist/](https://github.com/minimalist-components/angular-mn-input/tree/master/dist) with your preferred tool.
 
 ### Usage
 
