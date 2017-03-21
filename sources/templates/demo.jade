@@ -12,7 +12,7 @@ body(ng-controller='IndexController as controller')
   .mn-layout-fullscreen.mn-layout-centered
     .mn-layout-container
       mn-form.mn-layout-column.mn-layout-sm-row
-        mn-input.flex#username(placeholder='username' ng-model='controller.username')
+        mn-input.flex#username(placeholder='username' ng-model='controller.username' required)
         mn-input.flex#firstname(placeholder='firtname' ng-model='controller.firstname')
         mn-input.flex#lastname(placeholder='lastname' ng-model='controller.lastname')
         //- button submit
@@ -44,6 +44,7 @@ body(ng-controller='IndexController as controller')
     script(src='dist/angular-mn-input.js')
 
   script.
+    var input = document.querySelector('mn-input')
     angular.module('app', [
       'mn-input',
     ])

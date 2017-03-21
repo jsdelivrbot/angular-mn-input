@@ -8,6 +8,7 @@ gulp.task('vendorJS', vendorJSTask)
 function vendorJSTask() {
   const devDependencies = [
     'mn-gh-page',
+    'mn-form',
   ]
 
   const dependencies = packageFiles(devDependencies)
