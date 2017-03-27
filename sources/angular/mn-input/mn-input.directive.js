@@ -16,6 +16,9 @@ function mnInputDirective($compile, $parse) {
     }
     const input = element.find('input')
     element[0].value = $parse(attributes.ngModel)(scope)
+    if (element[0].value) {
+      element.addClass('has-value')
+    }
     input.attr('ng-model', attributes.ngModel)
     $compile(input)(scope)
   }
